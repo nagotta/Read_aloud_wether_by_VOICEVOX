@@ -1,0 +1,2 @@
+# Read_aloud_wether_by_zundamon
+ずんだもんが天気予報をお知らせしてくれるシステムを作成しました。
