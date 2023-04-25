@@ -1,0 +1,5 @@
+# 0時1分から2時間おきに天気予報を言う
+1 0-23/2 * * * bash /home/kbit/sh/applay.sh
+
+# 音声ファイルを最新の天気予報の情報に更新する
+32 1-23/2 * * * python3 /home/kbit/make_vo/main.py
