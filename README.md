@@ -11,3 +11,12 @@ VOICEVOX COREをインストールしてvoフォルダ作成
 
 
 ## バージョン
+
+
+## 参考文献
+
+天気予報 : 
+
+VOICEVOX : 
+
+VOICEVOX COREインストール : 
