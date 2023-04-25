@@ -9,7 +9,7 @@ VOICEVOX COREをインストールしてvoフォルダ作成
 
 ## ディレクトリ構成
 ![dir]
-(https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/files/11315984/tech_dir_str.pdf)
+(https://user-images.githubusercontent.com/86472676/234162217-e8045298-dbef-40b6-883d-cd4c90a7c262.png)
 
 ## バージョン
 
