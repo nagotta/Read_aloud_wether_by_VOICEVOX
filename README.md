@@ -11,14 +11,15 @@ VOICEVOX COREをインストールしてvoフォルダ作成
 
 <img width="403" alt="image" src="https://user-images.githubusercontent.com/86472676/234162796-1600576e-f8f1-4241-85f4-004b367b6db0.png">
 
-
 ## バージョン
 
+* Rasberry Pi 3 model B
+* VOICEVOX CORE 0.11.4
 
-## 参考文献
+## 参考サイト
 
-天気予報 : 
+[天気予報取得](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd#%E7%9B%AE%E6%AC%A1)
 
-VOICEVOX : 
+[VOICEVOX](https://github.com/VOICEVOX/voicevox_core)
 
-VOICEVOX COREインストール : 
+[VOICEVOX COREインストール](https://ponkichi.blog/raspberry-voicevox/#st-toc-h-4)
