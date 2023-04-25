@@ -8,7 +8,8 @@ main.pyから切り替えることが可能です。
 VOICEVOX COREをインストールしてvoフォルダ作成
 
 ## ディレクトリ構成
-
+![dir]
+(https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/files/11315984/tech_dir_str.pdf)
 
 ## バージョン
 
