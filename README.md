@@ -9,7 +9,8 @@ VOICEVOX COREをインストールしてvoフォルダ作成
 
 ## ディレクトリ構成
 
-<img width="859" alt="image" src="https://user-images.githubusercontent.com/86472676/234162542-f5bd3fbc-0099-437f-9381-37343e6dc49f.png">
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/86472676/234162796-1600576e-f8f1-4241-85f4-004b367b6db0.png">
+
 
 ## バージョン
 
