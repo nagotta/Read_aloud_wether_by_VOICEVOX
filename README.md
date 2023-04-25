@@ -8,8 +8,8 @@ main.pyから切り替えることが可能です。
 VOICEVOX COREをインストールしてvoフォルダ作成
 
 ## ディレクトリ構成
-![dir]
-(https://user-images.githubusercontent.com/86472676/234162217-e8045298-dbef-40b6-883d-cd4c90a7c262.png)
+
+<img width="859" alt="image" src="https://user-images.githubusercontent.com/86472676/234162542-f5bd3fbc-0099-437f-9381-37343e6dc49f.png">
 
 ## バージョン
 
