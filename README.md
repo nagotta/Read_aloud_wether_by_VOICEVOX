@@ -1,6 +1,35 @@
-# ReadME.md
-ずんだもん(VOICEVOXキャラ達)が天気予報をお知らせしてくれるシステムを作成しました。
+# VOICEVOXキャラによる天気予報お知らせシステム
 
-ずんだもん固定のバージョンとVOICEVOX搭載キャラがランダムに選出されるバージョンがあります。
-main.pyから切り替えることができます。
+VOICEVOXキャラ(ずんだもん、春日部つむぎ等)が天気予報をお知らせしてくれるシステムを作成しました。
 
+キャラを限定したい場合は[#キャラを限定したい場合](#キャラを限定したい場合)を参考に必要な箇所を編集してください。
+
+VOICEVOX COREをインストールしてvoフォルダ作成
+
+main.pyを実行するには
+VOICEVOX/.../python/run.pyを一部編集する必要があります。当リポジトリ内のrun.pyを参考に記述して下さい。
+また、同ディレクトリ内にvoフォルダ(wavファイル入れ)を作成してください。
+
+## ディレクトリ構成
+
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/86472676/234162796-1600576e-f8f1-4241-85f4-004b367b6db0.png">
+
+## バージョン
+
+* Rasberry Pi 3 model B
+* VOICEVOX CORE 0.11.4
+
+## フローチャート
+
+
+## キャラを限定したい場合
+
+編集するファイルと効率化
+
+## 参考サイト
+
+[天気予報取得](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd#%E7%9B%AE%E6%AC%A1)
+
+[VOICEVOX公式](https://github.com/VOICEVOX)
+
+[VOICEVOX COREインストール](https://ponkichi.blog/raspberry-voicevox/#st-toc-h-4)
