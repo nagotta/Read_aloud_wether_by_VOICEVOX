@@ -19,17 +19,14 @@ VOICEVOX/.../python/run.pyを一部編集する必要があります。当リポ
 * Rasberry Pi 3 model B
 * VOICEVOX CORE 0.11.4
 
-## フローチャート
-
-
 ## キャラを限定したい場合
 
-編集するファイルと効率化
+./make_vo/main.pyの13行目～32行目のifを任意のキャラクターのみコメントアウトしてください。
 
 ## 参考サイト
 
-[天気予報取得](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd#%E7%9B%AE%E6%AC%A1)
+[天気予報取得コード](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd#%E7%9B%AE%E6%AC%A1)
 
-[VOICEVOX公式](https://github.com/VOICEVOX)
+[VOICEVOX公式GitHub](https://github.com/VOICEVOX)
 
 [VOICEVOX COREインストール](https://ponkichi.blog/raspberry-voicevox/#st-toc-h-4)
