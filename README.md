@@ -1,8 +1,8 @@
 # VOICEVOXキャラによる天気予報お知らせシステム
 
-![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
-
 VOICEVOXキャラ([ずんだもん、春日部つむぎ達](https://voicevox.hiroshiba.jp/product/zundamon/)が天気予報をお知らせしてくれるシステムを作成しました。
+
+![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
 
 キャラを限定したい場合は[キャラを限定したい場合](#キャラを限定したい場合)を参考に必要な箇所を編集してください。
 
