@@ -1,6 +1,6 @@
 # VOICEVOXキャラによる天気予報お知らせシステム
 
-VOICEVOXキャラ([ずんだもん](https://voicevox.hiroshiba.jp/product/zundamon/)、[春日部つむぎ](https://voicevox.hiroshiba.jp/product/kasukabe_tsumugi/)達が天気予報をお知らせしてくれるシステムを作成しました。
+VOICEVOXキャラ([ずんだもん、春日部つむぎ達](https://voicevox.hiroshiba.jp/product/zundamon/)が天気予報をお知らせしてくれるシステムを作成しました。
 
 キャラを限定したい場合は[#キャラを限定したい場合](#キャラを限定したい場合)を参考に必要な箇所を編集してください。
 
