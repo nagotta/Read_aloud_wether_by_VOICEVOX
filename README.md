@@ -16,7 +16,6 @@ VOICEVOX/.../python/run.pyを一部編集する必要があります。当リポ
 
 ## バージョン
 
-* Rasberry Pi 3 model B
 * VOICEVOX CORE 0.11.4
 
 ## キャラを限定したい場合
