@@ -1,6 +1,7 @@
 # VOICEVOXキャラによる天気予報お知らせシステム
 
 VOICEVOXキャラ([ずんだもん、春日部つむぎ達](https://voicevox.hiroshiba.jp/product/zundamon/)が天気予報をお知らせしてくれるシステムを作成しました。
+天気情報をアメダスより取得し設定時刻になれば音声によって知らせてくれます。
 
 ![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
 
