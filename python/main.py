@@ -1,4 +1,4 @@
-from get_wether_info import get_weater_infomation
+from python.get_wether_info import get_weater_infomation
 import subprocess
 import random
 import os

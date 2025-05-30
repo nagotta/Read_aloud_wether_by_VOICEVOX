@@ -1,8 +1,15 @@
 # 全ディレクトリに存在する__pycache__を無視
 **/__pycache__/** 
 
-# 仮想環境を無視
+# 仮想環境
 .venv
 
-# .envファイルを無視
-.env
+# .envファイル
+# .env
+
+# テストファイル
+test_*
+
+# ボリュームマウント
+python/test*
+python/.env

@@ -1,11 +1,8 @@
 # import argparse
 # from typing import Optional
-
 # import core
 # import soundfile
-
 # from forwarder import Forwarder
-
 
 # def run(
 #     use_gpu: bool,
@@ -25,7 +22,6 @@
 #         yukarin_s_forwarder=core.yukarin_s_forward,
 #         yukarin_sa_forwarder=core.yukarin_sa_forward,
 #         decode_forwarder=core.decode_forward,
-#  割く下m割く下m
 
 #     # 音声合成
 #     wave = forwarder.forward(
