@@ -1,14 +1,12 @@
 # VOICEVOXキャラによる天気予報お知らせシステム
 
-本システムはLinux系OS上で動作する天気予報音声通知システムです．設定時刻になると，ずんだもんや春日部つむぎ等の[VOICEVOX](https://voicevox.hiroshiba.jp/product/zundamon/)キャラクターが気温・降水量・気候状況を音声で知らせてくれます．
+本システムは，Linux系OS上で動作する天気予報音声通知システムです．設定時刻になると，ずんだもんや春日部つむぎ等の[VOICEVOX](https://voicevox.hiroshiba.jp/product/zundamon/)キャラクターが気温・降水量・気候状況を音声で知らせてくれます．
 
-![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
-
-<!--## サンプルボイス ずんだもん-->
 ## サンプルボイス
 - ずんだもん(ノーマル)
-<!-- ここにwavを挿入 -->
+https://github.com/user-attachments/assets/0402f9e2-5b77-424f-8807-3d25c4e1b001
 
+![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
 
 ## 構築手順
 - 起動
