@@ -1,0 +1,39 @@
+# CPU実行
+services:
+  # VoiceVoxエンジン
+  voicevox:
+    image: "${IMAGE_NAME}:${IMAGE_TAG}"
+    container_name: voicevox-container
+    hostname: ${VOICEVOX_HOSTNAME}
+    restart: always
+    ports:
+      - "${HOST_IP}:${VOICEVOX_HOST_PORT}:${VOICEVOX_CONTAINER_PORT}"
+    stdin_open: true           # コンテナを対話型で起動
+    tty: true                  # TTY(疑似ターミナル)の割当設定
+    networks:
+      - app-net
+
+  # Python実行環境
+  python:
+    build: ./weather_app
+    container_name: python-container
+    hostname : ${PYTHON_HOSTNAME}
+    restart: always
+    ports:
+      - "${PYTHON_HOST_PORT}:${PYTHON_CONTAINER_PORT}"  # Pythonアプリケーションのポート
+    working_dir: /app
+    volumes:
+      - ./weather_app:/app          # ソースコードもマウント（hot reloadしたい場合など）
+      - ./.env:/app/.env       # プロジェクトルートの.envをコンテナ/app/.envにマウント
+    devices:
+      - /dev/snd:/dev/snd      # ALSAデバイスをマウント
+    group_add:
+      - "audio"                # audioグループでサウンドデバイス使用権限を与える
+    tty: true
+    stdin_open: true
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

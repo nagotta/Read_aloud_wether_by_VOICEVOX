@@ -1,37 +1,68 @@
 # VOICEVOXキャラによる天気予報お知らせシステム
 
-VOICEVOXキャラ([ずんだもん、春日部つむぎ達](https://voicevox.hiroshiba.jp/product/zundamon/))が天気予報をお知らせしてくれるシステムを作成しました。
+本システムは，Linux系OS上で動作する天気予報音声通知システムです．設定時刻になると，ずんだもんや春日部つむぎ等の[VOICEVOX](https://voicevox.hiroshiba.jp/product/zundamon/)キャラクターが気温・降水量・気候状況を音声で知らせてくれます．
 
-設定時刻になるとアメダスより取得した気候状況を音声によって知らせてくれます。
+## サンプルボイス
+- ずんだもん(ノーマル)
+
+![サンプルボイス](https://github.com/user-attachments/assets/017daedb-0d77-4ec8-aa20-d9b86275bd32)
 
 ![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
 
-キャラを限定したい場合は[キャラを限定したい場合](#キャラを限定したい場合)を参考に必要な箇所を編集してください。
+## 構築手順
+**1. リポジトリのクローン・起動**
+```
+git clone https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX.git
+cd Read_aloud_wether_by_VOICEVOX
+docker compose up -d
+```
 
-VOICEVOX COREをインストールしてvoフォルダ作成
+**2. 初回セットアップ(キャラクターや地域を設定)**
+```
+docker compose run --rm python python3 /app/config.py
+```
+```
+（下記のようにインタラクティブに設定できます）
+【天気予報の地域を選択】
+検索ワードを入力してください (e.g. 香川): 香川
+43: 香川県
+番号を選択: 43
+選択: 香川県（コード: 370000）
 
-main.pyを実行するには
-VOICEVOX/.../python/run.pyを一部編集する必要があります。当リポジトリ内のrun.pyを参考に記述して下さい。
-また、同ディレクトリ内にvoフォルダ(wavファイル入れ)を作成してください。
+【VOICEVOXキャラクターを選択】
+検索ワードを入力してください (e.g. ずんだもん): ずんだ
+6: ずんだもん（ノーマル）
+7: ずんだもん（あまあま）
+8: ずんだもん（ツンツン）
+9: ずんだもん（セクシー）
+10: ずんだもん（ささやき）
+11: ずんだもん（ヒソヒソ）
+12: ずんだもん（ヘロヘロ）
+13: ずんだもん（なみだめ）
+番号を選択: 6
+選択: ずんだもん（ノーマル）（ID: 3）
 
-## ディレクトリ構成
+設定を保存しました：user_config.json
+```
 
-<img width="403" alt="image" src="https://user-images.githubusercontent.com/86472676/234162796-1600576e-f8f1-4241-85f4-004b367b6db0.png">
+**3. 設定ファイル作成後に本番運用を開始**
+```sh
+docker compose restart python
+```
 
-## バージョン
+**4. 停止**
+```
+docker compose down
+```
 
-* VOICEVOX CORE 0.11.4
+## 動作確認環境
 
-<!--## サンプルボイス ずんだもん-->
+- Docker version 27.4.1
+- Ubuntu 24.04.1 LTS
+- VOICEVOX ENGINE 0.23.0
 
-### キャラを限定したい場合
+## 参考サイト
 
-./make_vo/main.pyの13行目～32行目のifを任意のキャラクターのみコメントアウトしてください。
-
-### 参考サイト
-
-[天気予報取得コード](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd#%E7%9B%AE%E6%AC%A1)
-
-[VOICEVOX公式GitHub](https://github.com/VOICEVOX)
-
-[VOICEVOX COREインストール](https://ponkichi.blog/raspberry-voicevox/#st-toc-h-4)
+- [VOICEVOX GitHub](https://github.com/VOICEVOX)
+- [VOICEVOX_ENGINE](https://github.com/VOICEVOX/voicevox_engine/releases)
+- [【Colab / Python】気象庁API - 気象データの収集](https://qiita.com/T_Ryota/items/ef96d6575404a0fd46dd)
