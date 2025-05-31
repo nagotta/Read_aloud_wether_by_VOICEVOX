@@ -7,6 +7,8 @@
 
 ![サンプルボイス](https://github.com/user-attachments/assets/017daedb-0d77-4ec8-aa20-d9b86275bd32)
 
+## イメージ画像(*語尾は未実装)
+
 ![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
 
 ## 構築手順
