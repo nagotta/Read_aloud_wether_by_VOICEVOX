@@ -10,15 +10,11 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# .pyファイル群はcompose側のvolumesでマウントされるためCOPY不要
-
-# CMDはcompose.ymlでcommand指定する場合は不要．main.pyを起動したい場合は下記
-# CMD ["python", "main.py"]
-
-CMD bash /app/test/test.sh
-
 # crontab設定ファイルをコンテナにコピー
 COPY crontab.txt /etc/cron.d/my-cron
 
-# CMDでtest.sh→cronを順に実行
-CMD bash /app/test/test.sh && cron -f
+# 音声再生テスト，キャラクターと天気を予報する地域を設定，定期実行の開始
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+CMD ["/app/entrypoint.sh"]

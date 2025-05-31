@@ -15,7 +15,7 @@ services:
 
   # Python実行環境
   python:
-    build: ./python
+    build: ./weather_app
     container_name: python-container
     hostname : ${PYTHON_HOSTNAME}
     restart: always
@@ -23,8 +23,7 @@ services:
       - "${PYTHON_HOST_PORT}:${PYTHON_CONTAINER_PORT}"  # Pythonアプリケーションのポート
     working_dir: /app
     volumes:
-      - ./python:/app          # ソースコードもマウント（hot reloadしたい場合など）
-      - ./test:/app/test       # テストコードをマウント
+      - ./weather_app:/app          # ソースコードもマウント（hot reloadしたい場合など）
       - ./.env:/app/.env       # プロジェクトルートの.envをコンテナ/app/.envにマウント
     devices:
       - /dev/snd:/dev/snd      # ALSAデバイスをマウント

@@ -5,11 +5,14 @@
 .venv
 
 # .envファイル
-# .env
+.env
 
 # テストファイル
-test_*
+test*
 
 # ボリュームマウント
-python/test*
-python/.env
+weather_app/test*
+weather_app/.env
+
+# ユーザ設定ファイル
+# user_setting.json
