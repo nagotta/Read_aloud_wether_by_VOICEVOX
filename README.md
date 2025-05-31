@@ -5,7 +5,7 @@
 ## サンプルボイス
 - ずんだもん(ノーマル)
 
-![サンプルボイス](https://github.com/user-attachments/assets/017daedb-0d77-4ec8-aa20-d9b86275bd32)
+![サンプルボイスURL](https://github.com/user-attachments/assets/017daedb-0d77-4ec8-aa20-d9b86275bd32)
 
 ## イメージ画像(*語尾は未実装)
 
