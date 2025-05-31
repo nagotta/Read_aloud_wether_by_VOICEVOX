@@ -10,14 +10,14 @@
 ![お天気ずんだもん](https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX/assets/86472676/9afd77a1-d191-4a83-af65-35a34f885509)
 
 ## 構築手順
-1. リポジトリのクローン・起動
+**1. リポジトリのクローン・起動**
 ```
 git clone https://github.com/nagotta/Read_aloud_wether_by_VOICEVOX.git
 cd Read_aloud_wether_by_VOICEVOX
 docker compose up -d
 ```
 
-2. 初回セットアップ(キャラクターや地域を設定)
+**2. 初回セットアップ(キャラクターや地域を設定)**
 ```
 docker compose run --rm python python3 /app/config.py
 ```
@@ -44,11 +44,13 @@ docker compose run --rm python python3 /app/config.py
 
 設定を保存しました：user_config.json
 ```
-3. 設定ファイル作成後に本番運用を開始
+
+**3. 設定ファイル作成後に本番運用を開始**
 ```sh
 docker compose restart python
 ```
-4. 停止
+
+**4. 停止**
 ```
 docker compose down
 ```
